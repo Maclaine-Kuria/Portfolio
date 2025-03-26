@@ -1,1 +1,30 @@
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+}
 
+.nav-container {
+    list-style:none;
+    display: flex;
+    background-color: black;
+}
+
+.items {
+    padding-right: 130px;
+    padding-top: 40px;
+}
+
+.items a{
+    color:azure;
+    text-decoration: none;
+}
+
+.items a:hover {
+    color:yellow;
+}
+
+body {
+    background-color: rgb(13, 13, 14);
+  }
+  
