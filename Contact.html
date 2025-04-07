@@ -1,21 +1,160 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <TITLE> Maclaine </TITLE>
-        <link rel="icon" href="Images\icon.png">
-        <link rel="stylesheet" href="Styles.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--===== CSS Files =====-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/skins/color-1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <!-- ===== Style Switcher =====-->
+        <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+        <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+        <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+        <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+        <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+        <link rel="stylesheet" href="css/style-switcher.css">
     </head>
 
     <body>
-        <ul class="nav-container">
-            <img src="Images\logo.jpg" class="logo">
-            <li class="items"><A HREF="./Home.html "> Home </A></li>
-            <li class="items"><A HREF="./About.html "> About me </A></li>
-            <li class="items"><A HREF="./Project.html "> Project Portfolio </A></li>
-            <li class="items"><A HREF="./Blog.html "> Blog section </A></li>
-            <li class="items"><A HREF="./Contact.html "> Contact form </A></li>
-        </ul>
+        <!--===== Main Container Start =====-->
+        <div class="main-container">
+            <!--===== Aside Start =====-->
+            <div class="aside">
+                <div class="logo">
+                    <a href="#"><span>M</span>aclaine</a>
+                </div>
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
+                <ul class="nav">
+                    <li><a href="./index.html"><i class="fa fa-home"></i> Home </a></li>
+                    <li><a href="./About.html"><i class="fa fa-user"></i> About </a></li>
+                    <li><a href="./Service.html"><i class="fa fa-list"></i> Services </a></li>
+                    <li><a href="./Portfolio.html"><i class="fa fa-briefcase"></i> Portfolio </a></li>
+                    <li><a href="./Contact.html"><i class="fa fa-comments"></i> Contact </a></li>
+                </ul>    
+            </div>
+            <!--===== Aside End =====-->
+            <!--===== Main Content Start ===== -->
+            <div class="main-content">
+                <!-- ===== Contact Section Start ==== -->
+                <section class="contact active section" id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Contact Me</h2>
+                            </div>
+                        </div>
+                        <h3 class="contact-title padd-15">Have any Questions? </h3>
+                        <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICE</h4>
+                        <div class="row">
+                            <!-- ===== Contact info item Start-->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i class="fa fa-phone"></i></div>
+                                <h4>Call Us On</h4>
+                                <p>+254 374748448</p>
+                            </div>
+                            <!-- ===== Contact info item End-->
+                            <!-- ===== Contact info item Start-->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                                <h4>Office</h4>
+                                <p>Ngong Road</p>
+                            </div>
+                            <!-- ===== Contact info item End-->
+                             <!-- ===== Contact info item Start-->
+                             <div class="contact-info-item padd-15">
+                                <div class="icon"><i class="fa fa-envelope"></i></div>
+                                <h4>Email</h4>
+                                <p>kuriamaclaine@gmail.com</p>
+                            </div>
+                            <!-- ===== Contact info item End-->
+                             <!-- ===== Contact info item Start-->
+                             <div class="contact-info-item padd-15">
+                                <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                                <h4>Website</h4>
+                                <p>www.domin.com</p>
+                            </div>
+                            <!-- ===== Contact info item End-->
+                        </div>
+                        <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                        <h4 class="contact-sub-title padd-15">QICK RESPONSE IS GARANTEED</h4>
+                        <!-- ===== Contact form =====-->
+                        <div class="row">
+                            <div class="contact-form padd-15">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                            <span class="error-message" id="name-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                            <span class="error-message" id="email-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                                            <span class="error-message" id="subject-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Message"></textarea>
+                                            <span class="error-message" id="message-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn" id="submit-btn">Send Message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ===== Contact Section End ==== -->
+            </div>
+            <!--===== Main Content End ===== -->
+        </div>
+        <!--===== Main Container End =====-->
+        <!-- ==== Style Switcher Start =====-->
+        <div class="style-switcher">
+            <div class="style-switcher-toggler s-icon">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="day-night s-icon">
+                <i class="fas fa-moon"></i>
+            </div>
+            <h4>Theme Colors</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+        </div>
+        <!-- ==== Style Switcher End=====-->
 
-        <script src="script.js"></script>
+        <!--===== JS Files =====-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+        <script src="js/function.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/style-switcher.js"></script>
 
     </body>
-</html>    
+</html>
