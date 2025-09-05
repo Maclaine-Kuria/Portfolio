@@ -44,3 +44,25 @@ window.addEventListener("load",() => {
         dayNight.querySelector("i").classList.add("fa-moon")
     }
 })
+
+/*================== Sidebar Nav Toggler (Mobile/Tablet) ========= */
+const navToggler = document.querySelector(".nav-toggler");
+const aside = document.querySelector(".aside");
+const sections = document.querySelectorAll(".section");
+
+// Toggle sidebar
+navToggler.addEventListener("click", () => {
+    aside.classList.toggle("open");
+    navToggler.classList.toggle("open");
+});
+
+// Close sidebar when a nav link is clicked (on mobile)
+document.querySelectorAll(".aside .nav li a").forEach(link => {
+    link.addEventListener("click", () => {
+        if (aside.classList.contains("open")) {
+            aside.classList.remove("open");
+            navToggler.classList.remove("open");
+        }
+    });
+});
+
